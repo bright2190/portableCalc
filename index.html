@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+  <script src="./app.js" defer></script>
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Calculator app</title>
+
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+<body class="firstcolor">
+  <div class="calc">
+    <div class="head">
+      <div class="calctext color fontcolor">calc</div>
+      <div style="display: flex;flex-direction: row; align-items: flex-end; column-gap: 20px;">
+        <span class="themetext color fontcolor">
+          THEME
+        </span>
+        <div class="switch">
+          <div class="color themetext fontcolor" style="display: flex; flex-direction: row; justify-content: space-evenly;">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+          </div>
+          <div id="select" class="togglebox togglebox_property">
+            <button id="one" class="toggle toggle_property"></button>
+            <button id="two" class=" toggle_property"></button>
+            <button id="three" class=" toggle_property"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="screen" class="input_property input">
+
+    </div>
+    <div id= "pad" class="keypad_property keypad">
+      <div class="keyrow">
+        <div class="key_property themekey1 key1 number">7</div>
+        <div class="key_property themekey1 key1 number">8</div>
+        <div class="key_property themekey1 key1 number">9</div>
+        <div id="delete" class="key_property themekey1_1 key2">DEL</div>
+      </div>
+      <div class="keyrow">
+        <div class="key_property themekey1 key1 number">4</div>
+        <div class="key_property themekey1 key1 number">5</div>
+        <div class="key_property themekey1 key1 number">6</div>
+        <div id="add" class="key_property themekey1 key1 sign">+</div>
+      </div>
+      <div class="keyrow">
+        <div class="key_property themekey1 key1 number">3</div>
+        <div class="key_property themekey1 key1 number">2</div>
+        <div class="key_property themekey1 key1 number">1</div>
+        <div id="subtract" class="key_property themekey1 key1 sign">-</div>
+      </div>
+      <div class="keyrow">
+        <div class="key_property themekey1 key1 number">.</div>
+        <div class="key_property themekey1 key1 number">0</div>
+        <div id="divide" class="key_property themekey1 key1 sign">/</div>
+        <div id="multiply" class="key_property themekey1 key1 sign">x</div>
+      </div>
+      <div class="keyrow">
+        <div id="clear" class="key_property1 themekey1_1 key2">RESET</div>
+        <div id="key3" class="key_property1 themekey1_2 symbol">=</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="attribution fontcolor color">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Emmanuel Bright Anoghena</a>.
+  </div>
+</body>
+</html>
